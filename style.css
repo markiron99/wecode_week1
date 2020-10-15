@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 네비게이션바*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282828;
+    padding: 8px 12px;
+}
+.navbar__logo {
+    font-family: 'Bungee shade';
+    font-size: 24px;
+    color: #fff;
+    padding: 8px 12px;
+}
+.navbar__menu {
+    font-family: 'Roboto';
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.navbar__menu li {
+    padding: 8px 12px;
+}
+.navbar__menu li:hover {
+    background-color: #f1c40f;
+    border-radius: 4px;
+}
+.navbar__icons {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    padding-left: 0%;
+}
+.navbar__icons i {
+    font-size: 24px;
+    padding: 8px 12px;
+}
+
+/* 메인 본문 */
+.main__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+}
+.welcome__img {
+}
+.welcome__msg {
+}
+
+/* 내 소개 메인 */
+.about__section {
+    flex-grow: 1;
+}
+.about__top {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    text-align: center;
+}
+
+/* Practice 페이지 */
+.practice__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+}
+.practice__msg {
+    font-size: 20px;
+}
+
+/* footer 설정*/
+.footer__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282828;
+    padding: 8px 12px;
+}
+.footer__navoutro {
+    font-size: 12px;
+    color: #fff;
+    padding: 8px 12px;
+}
+.footer__icons {
+    list-style: none;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    padding-left: 0%;
+}
+.footer__icons i {
+    padding: 8px 12px;
+}
+
+/* 상단 네비게이션바 반응형 미디어 */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__icons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about__top {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
